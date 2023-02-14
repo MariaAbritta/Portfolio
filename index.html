@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset = "utf-8" />
+        <!--É uma tag meta utilizada para comunicar aos navegadores 
+            qual é o formato de codificação de caracteres utilizado 
+            naquele documento.-->
+        <meta name = "viewport" content = "width-device-width, initial-scale=1.0" />
+        <!--viewport = controla como um site é exibido em um dispositivo móvel. 
+            Quando o Google avalia o quanto seu site é otimizado para 
+            dispositivos móveis, ele analisa a configuração da janela de 
+            visualização como um critério para otimização
+            width=device-width =  define o viewport com a largura do dispositivo. 
+            initial-scale=1 = define o nível de zoom inicial quando o usuário visita a página.-->
+        <title>Portfólio Maria Abritta</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <!--Rel = define o relacionamento entre o arquivo em que o comando está 
+            escrito e o arquivo que é definido no caminho do href-->
+
+        <link rel="stylesheet" 
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+    </head> 
+    <body>
+
+        <header>
+            <a href = "#" class = "logo">Maria Abritta</a>
+            <div class= "bx bx-menu" id = "menu-icon"></div>
+
+            <ul class = "navbar">
+                <li><a href = "#home">Home</a></li> 
+                <li><a href = "#about">Sobre Mim</a></li> 
+                <li><a href = "#projects">Projetos</a></li> 
+                <li><a href = "#skills">Skills</a></li> 
+                <li><a href = "#contact">Contato</a></li> 
+            </ul>
+        </header>
+
+        <!--home start-->
+        <section class = "home" id = "home">
+            <div class = "home-text">
+                <h1>Full website</h1>
+                <h2>Alguma coisa <br> Resto de aaaaaaaa</h2>
+                <a href = "https://www.linkedin.com/in/mariaabritta/" target="_blank" class = "btn">Saiba Mais</a>
+            </div>
+
+            <div class = "home-img">
+                <img src = "images/fotoHome.png">
+            </div>
+        </section>
+
+        <!--about start-->
+        <section class = "about" id = "about">
+            <div class = "about-img">
+                <img src = "images/fotoAbout.png">
+            </div>
+
+            <div class = "about-text">
+                <span>Sobre Mim</span>
+                <h2>Título sobre <br> mim</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente recusandae pariatur facere dignissimos, dolore ipsam perspiciatis corporis architecto nihil temporibus vitae hic officia quo voluptatum error saepe exercitationem voluptates nam!</p>
+                <a href = "https://www.linkedin.com/in/mariaabritta/details/certifications/" target="_blank" class = "btn">Meus Cursos</a>
+            </div>
+        </section>
+
+        <!--projects start-->
+        <section class = "projects" id = "projects">
+            <div class = "heading">
+                <span>Meu Projetos</span>
+                <h2>Bla bla bla bla bla bla</h2>
+            </div>
+            <div class = "projects-container">
+                <div class = "box">
+                    <div class = "box-image">
+                        <img src="images/projeto1.png"> <!--Imagem de projeto-->
+                    </div>
+                    <h2>Eng Venture</h2>
+                    <h3>blu blu blu</h3>
+                    <span>lalala</span>
+                    <i class='bx bx-paper-plane'></i>
+                </div>
+
+                <div class = "box">
+                    <div class = "box-image">
+                        <img src="images/projeto2.png"> <!--Imagem de projeto-->
+                    </div>
+                    <h2>GetPet</h2>
+                    <h3>blu blu blu</h3>
+                    <span>lalala</span>
+                    <i class='bx bxs-dog'></i>
+                </div>
+
+                <div class = "box">
+                    <div class = "box-image">
+                        <img src="images/projeto3.png"> <!--Imagem de projeto-->
+                    </div>
+                    <h2>Inevxt</h2>
+                    <h3>blu blu blu</h3>
+                    <span>lalala</span>
+                    <i class='bx bx-wallet'></i>
+                </div>
+
+            </div>
+
+            
+        </section>
+
+        <!--skills start-->
+        <section class = "skills" id = "skills">
+            <div class = "heading">
+                <span>Minhas Skills</span>
+                <h2>bla bla bla bla bla</h2>
+            </div>
+
+            <div class = "skills-container">
+                <div class = "s-box">
+                    <img src="images/softSkills.png">
+                    <h3>Soft Skills</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo quae, voluptatibus impedit voluptas iusto similique nam porro consectetur vitae neque iure doloribus qui perspiciatis sunt blanditiis totam cumque modi?</p>
+                </div>
+
+                <div class = "s-box">
+                    <img src="images/hardSkills.png">
+                    <h3>Hard Skills</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo quae, voluptatibus impedit voluptas iusto similique nam porro consectetur vitae neque iure doloribus qui perspiciatis sunt blanditiis totam cumque modi?</p>
+                </div>
+
+                <div class = "s-box">
+                    <img src="images/principaisSkills.png">
+                    <h3>Principais Skills</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo quae, voluptatibus impedit voluptas iusto similique nam porro consectetur vitae neque iure doloribus qui perspiciatis sunt blanditiis totam cumque modi?</p>
+                </div>
+
+            </div>
+        </section>
+
+    </body> 
+</html>
