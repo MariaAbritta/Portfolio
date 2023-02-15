@@ -142,6 +142,17 @@ section {
     grid-gap: 1.5rem;
     align-items: center;
 }
+.projects .box a {
+    color: var(--text-color2);
+    font-size: 1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.projects .box a:hover {
+    color: var(--main-color);
+    transform: translate(2px);
+}
 .box {
     position: relative;
     margin-top: 4rem;
