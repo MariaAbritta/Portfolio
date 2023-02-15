@@ -206,3 +206,39 @@ section {
 .s-box p {
     line-height: 1.7;
 }
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    padding: 10px 0;
+}
+.col {
+    width: 25%;
+}
+.col h4 {
+    font-size: 2rem;
+    color: var(--text-color2);
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 205px;
+    left: 0;
+    bottom: -8px;
+    background: var(--main-color);
+}
+.col a {
+    color: #002930;
+    font-size: 1.2rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col a:hover {
+    color: var(--main-color);
+    transform: translateX(-12px);
+}
