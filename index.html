@@ -1,167 +1,220 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset = "utf-8" />
-        <!--É uma tag meta utilizada para comunicar aos navegadores 
+  <head>
+    <meta charset="utf-8" />
+    <!--É uma tag meta utilizada para comunicar aos navegadores 
             qual é o formato de codificação de caracteres utilizado 
             naquele documento.-->
-        <meta name = "viewport" content = "width-device-width, initial-scale=1.0" />
-        <!--viewport = controla como um site é exibido em um dispositivo móvel. 
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <!--viewport = controla como um site é exibido em um dispositivo móvel. 
             Quando o Google avalia o quanto seu site é otimizado para 
             dispositivos móveis, ele analisa a configuração da janela de 
             visualização como um critério para otimização
             width=device-width =  define o viewport com a largura do dispositivo. 
             initial-scale=1 = define o nível de zoom inicial quando o usuário visita a página.-->
-        <title>Portfólio Maria Abritta</title>
-        <link rel = "stylesheet" type = "text/css" href = "style.css" />
-        <!--Rel = define o relacionamento entre o arquivo em que o comando está 
+    <title>Portfólio Maria Abritta</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Rel = define o relacionamento entre o arquivo em que o comando está 
             escrito e o arquivo que é definido no caminho do href-->
 
-        <link rel="stylesheet" 
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
-    </head> 
-    <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Maria Abritta</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-        <header>
-            <a href = "#" class = "logo">Maria Abritta</a>
-            <div class= "bx bx-menu" id = "menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </header>
 
-            <ul class = "navbar">
-                <li><a href = "#home">Home</a></li> 
-                <li><a href = "#about">Sobre Mim</a></li> 
-                <li><a href = "#projects">Projetos</a></li> 
-                <li><a href = "#skills">Skills</a></li> 
-                <li><a href = "#contact">Contato</a></li> 
-            </ul>
-        </header>
+    <!--home start-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Meu Portfólio</h1>
+        <h2>
+          Engenheira de Software<br />
+          Analista de Requisitos <br />
+          Product Owner <br />
+          Gestão de Projetos
+        </h2>
+        <a
+          href="https://www.linkedin.com/in/mariaabritta/"
+          target="_blank"
+          class="btn"
+          >Saiba Mais</a
+        >
+      </div>
 
-        <!--home start-->
-        <section class = "home" id = "home">
-            <div class = "home-text">
-                <h1>Meu Portfólio</h1>
-                <h2>Engenheira de Software<br> Analista de Requisitos <br> Product Owner <br> Gestão de Projetos</h2>
-                <a href = "https://www.linkedin.com/in/mariaabritta/" target="_blank" class = "btn">Saiba Mais</a>
+      <div class="home-img">
+        <img src="images/fotoHome.png" />
+      </div>
+    </section>
+
+    <!--about start-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/fotoAbout.png" />
+      </div>
+
+      <div class="about-text">
+        <span>Sobre Mim</span>
+        <h2>Quem sou eu?</h2>
+        <p>
+          Atualmente estou cursando Engenharia de Software na Universidade de
+          Brasília (UnB), sou Diretora de Projetos da Empresa Júnior Orc'estra
+          Gamificação (Empresa Júnior de Engenharia de Software da UnB) e
+          trabalho na empresa Meta - Digital. Simple. Human. como Coordenadora
+          de Projetos. Tenho inglês fluente, certificado pela Universidade de
+          Cambridge (Nível B1). Busco experiência na área e crescer
+          profissionalmente. Saiba mais sobre meus conhecimentos:
+        </p>
+        <a
+          href="https://www.linkedin.com/in/mariaabritta/"
+          target="_blank"
+          class="btn"
+          >Saiba mais em "Licenças e certificados" no LinkedIn!</a
+        >
+      </div>
+    </section>
+
+    <!--projects start-->
+    <section class="projects" id="projects">
+      <div class="heading">
+        <span>Meu Projetos</span>
+        <h2>Clique em "GitHub" para saber mais!</h2>
+      </div>
+      <div class="projects-container">
+        <div class="box">
+          <div class="box-image">
+            <img src="images/projeto1.png" />
+            <!--Imagem de projeto-->
+          </div>
+          <h2>Eng Venture</h2>
+          <h3>Desenvolvedora Full Stack</h3>
+          <h3>Python + GDScript</h3>
+          <a href="https://github.com/matheusrazor/DS-time9" target="_blank"
+            >GitHub</a
+          >
+          <i class="bx bx-paper-plane"></i>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <img src="images/projeto2.png" />
+            <!--Imagem de projeto-->
+          </div>
+          <h2>GetPet</h2>
+          <h3>Product Owner</h3>
+          <h3>Flutter + Firebase</h3>
+          <a
+            href="https://github.com/mdsreq-fga-unb/2022.2-GetPet"
+            target="_blank"
+            >GitHub</a
+          >
+          <i class="bx bxs-dog"></i>
+        </div>
+
+        <div class="box">
+          <div class="box-image">
+            <img src="images/projeto3.png" />
+            <!--Imagem de projeto-->
+          </div>
+          <h2>Inevxt</h2>
+          <h3>Desenvolvedora Back-end</h3>
+          <h3>React + NodeJS + MySQL</h3>
+          <a href="https://github.com/fga-eps-mds/GFour-Invext" target="_blank"
+            >GitHub</a
+          >
+          <i class="bx bx-wallet"></i>
+        </div>
+      </div>
+    </section>
+
+    <!--skills start-->
+    <section class="skills" id="skills">
+      <div class="heading">
+        <span>Minhas Skills</span>
+        <h2>Me conheça um pouco mais!</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="s-box">
+          <img src="images/softSkills.png" />
+          <h3>Soft Skills</h3>
+          <p>
+            Comunicar, liderar, colaborar, resolver conflitos e pensar
+            criticamente são habilidades que compõem uma verdadeira paleta de
+            soft skills que eu domino. Sempre levo essas caracterísitcas em todo
+            processo profissional que me insiro.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <img src="images/hardSkills.png" />
+          <h3>Hard Skills</h3>
+          <p>
+            Elencar Requisitos, Programar, Visão de Negócio/Projeto, Língua
+            inglesa são habilidades que fazem parte de mim. Essas hard skills
+            são alicerces que solidificam minahs expertise técnica e contribuem
+            para minha capacidade de enfrentar desafios complexos com confiança.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <img src="images/principaisSkills.png" />
+          <h3>Principais Skills</h3>
+          <p>
+            Proatividade, Alegria, Confiança, Adaptabilidade, Enxergar além do
+            momento presente, são skills que estão dentro de cada habilidade
+            minha!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--contact start-->
+    <section class="contact" id="contact">
+      <div class="footer">
+        <div class="main">
+          <div class="col">
+            <h4>Contate-me</h4>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/maria-abritta-ba7632174/"
+                target="_blank"
+                ><i class="bx bxl-linkedin-square"> LinkedIn</i></a
+              >
+              <a href="https://github.com/MariaAbritta"
+                ><i class="bx bxl-github" target="_blank"> GitHub</i></a
+              >
+              <a href="#"
+                ><i class="bx bxl-gmail">
+                  G-mail: Eduardaabritta@gmail.com</i
+                ></a
+              >
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class = "home-img">
-                <img src = "images/fotoHome.png">
-            </div>
-        </section>
-
-        <!--about start-->
-        <section class = "about" id = "about">
-            <div class = "about-img">
-                <img src = "images/fotoAbout.png">
-            </div>
-
-            <div class = "about-text">
-                <span>Sobre Mim</span>
-                <h2>Quem sou eu?</h2>
-                <p>Atualmente estou cursando Engenharia de Software na Universidade de Brasília (UnB), sou Diretora de Projetos da Empresa Júnior Orc'estra Gamificação (Empresa Júnior de Engenharia de Software da UnB) e estagiando na empresa Meta - Digital. Simple. Human. como Analista de Requisitos e PO (Product Owner). Tenho inglês fluente, certificado pela Universidade de Cambridge (Nível B1). Busco experiência na área e crescer profissionalmente. Saiba mais sobre meus conhecimentos:</p>
-                <a href = "https://www.linkedin.com/in/mariaabritta/" target="_blank" class = "btn">Saiba mais em "Licenças e certificados" no LinedIn!</a>
-            </div>
-        </section>
-
-        <!--projects start-->
-        <section class = "projects" id = "projects">
-            <div class = "heading">
-                <span>Meu Projetos</span>
-                <h2>Clique em "GitHub" para saber mais!</h2>
-            </div>
-            <div class = "projects-container">
-                <div class = "box">
-                    <div class = "box-image">
-                        <img src="images/projeto1.png"> <!--Imagem de projeto-->
-                    </div>
-                    <h2>Eng Venture</h2>
-                    <h3>Desenvolvedora Full Stack</h3>
-                    <h3>Python + GDScript</h3>
-                    <a href = "https://github.com/matheusrazor/DS-time9" target="_blank">GitHub</a>
-                    <i class='bx bx-paper-plane'></i>
-                </div>
-
-                <div class = "box">
-                    <div class = "box-image">
-                        <img src="images/projeto2.png"> <!--Imagem de projeto-->
-                    </div>
-                    <h2>GetPet</h2>
-                    <h3>Product Owner</h3>
-                    <h3>Flutter + Firebase</h3>
-                    <a href = "https://github.com/mdsreq-fga-unb/2022.2-GetPet" target="_blank">GitHub</a>
-                    <i class='bx bxs-dog'></i>
-                </div>
-
-                <div class = "box">
-                    <div class = "box-image">
-                        <img src="images/projeto3.png"> <!--Imagem de projeto-->
-                    </div>
-                    <h2>Inevxt</h2>
-                    <h3>Desenvolvedora Back-end</h3>
-                    <h3>React + NodeJS + MySQL</h3>
-                    <a href = "https://github.com/fga-eps-mds/GFour-Invext" target="_blank">GitHub</a>
-                    <i class='bx bx-wallet'></i>
-                </div>
-
-            </div>
-
-            
-        </section>
-
-        <!--skills start-->
-        <section class = "skills" id = "skills">
-            <div class = "heading">
-                <span>Minhas Skills</span>
-                <h2>Me conheça um pouco mais!</h2>
-            </div>
-
-            <div class = "skills-container">
-                <div class = "s-box">
-                    <img src="images/softSkills.png">
-                    <h3>Soft Skills</h3>
-                    <p>Comunicar, liderar, colaborar, resolver conflitos e pensar criticamente são habilidades que compõem uma verdadeira paleta de soft skills que eu domino. Sempre levo essas caracterísitcas em todo processo profissional que me insiro.</p>
-                </div>
-
-                <div class = "s-box">
-                    <img src="images/hardSkills.png">
-                    <h3>Hard Skills</h3>
-                    <p>Elencar Requisitos, Programar, Visão de Negócio/Projeto, Língua inglesa são habilidades que fazem parte de mim. Essas hard skills são alicerces que solidificam minahs expertise técnica e contribuem para minha capacidade de enfrentar desafios complexos com confiança. </p>
-                </div>
-
-                <div class = "s-box">
-                    <img src="images/principaisSkills.png">
-                    <h3>Principais Skills</h3>
-                    <p>Proatividade, Alegria, Confiança, Adaptabilidade, Enxergar além do momento presente, são skills que estão dentro de cada habilidade minha! </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!--contact start-->
-        <section class = "contact" id = "contact">
-            <div class = "footer">
-                <div class = "main">
-                    <div class = "col">
-                        <h4>Contate-me</h4>
-                        <div class = "social">
-                            <a href="https://www.linkedin.com/in/maria-abritta-ba7632174/" target="_blank"><i class='bx bxl-linkedin-square' > LinkedIn</i></a>
-                            <a href="https://github.com/MariaAbritta"><i class='bx bxl-github' target="_blank"> GitHub</i></a>
-                            <a href="#"><i class='bx bxl-gmail'> G-mail: Eduardaabritta@gmail.com</i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!--JavaScript-->
-        <script type = "text/javascript" src = "script.js"></script>
-
-
-    </body> 
+    <!--JavaScript-->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
