@@ -1432,7 +1432,7 @@ textarea.input {
     }
 
     .home {
-        background-image: none;
+        background: url('../img/home-bg-Maria.jpg');
         height: initial;
         align-items: initial;
         padding: 7rem 0 2rem;
