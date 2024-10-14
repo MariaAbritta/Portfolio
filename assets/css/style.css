@@ -1504,7 +1504,7 @@ textarea.input {
 }
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .home {
         background: url('../img/home-img-SmalDevices.jpg');
         height: auto;
@@ -1518,7 +1518,7 @@ textarea.input {
     }
 
     .home_img {
-        width: 200px;
+        width: 180px;
     }
 
     .home_title {
