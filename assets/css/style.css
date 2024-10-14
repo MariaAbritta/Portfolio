@@ -1506,8 +1506,8 @@ textarea.input {
 /* For Small Devices */
 @media screen and (max-width: 400px) {
     .home {
-        background: url('../img/home-img-SmalDevices.jpg');
         height: auto;
+        min-height: 300px;
         align-items: flex-start; 
         padding: 5rem 0 1.5rem; 
     }
