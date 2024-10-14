@@ -1,220 +1,859 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!--É uma tag meta utilizada para comunicar aos navegadores 
-            qual é o formato de codificação de caracteres utilizado 
-            naquele documento.-->
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <!--viewport = controla como um site é exibido em um dispositivo móvel. 
-            Quando o Google avalia o quanto seu site é otimizado para 
-            dispositivos móveis, ele analisa a configuração da janela de 
-            visualização como um critério para otimização
-            width=device-width =  define o viewport com a largura do dispositivo. 
-            initial-scale=1 = define o nível de zoom inicial quando o usuário visita a página.-->
-    <title>Portfólio Maria Abritta</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--Rel = define o relacionamento entre o arquivo em que o comando está 
-            escrito e o arquivo que é definido no caminho do href-->
+<html lang="en">
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== UNICONS ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Maria Abritta</a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+    <!--========== BOXICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Sobre Mim</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </header>
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-    <!--home start-->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>Meu Portfólio</h1>
-        <h2>
-          Engenheira de Software<br />
-          Analista de Requisitos <br />
-          Product Owner <br />
-          Gestão de Projetos
-        </h2>
-        <a
-          href="https://www.linkedin.com/in/mariaabritta/"
-          target="_blank"
-          class="btn"
-          >Saiba Mais</a
-        >
-      </div>
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-      <div class="home-img">
-        <img src="images/fotoHome.png" />
-      </div>
-    </section>
+    <title>Portfolio Maria Abritta</title>
+</head>
 
-    <!--about start-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/fotoAbout.png" />
-      </div>
-
-      <div class="about-text">
-        <span>Sobre Mim</span>
-        <h2>Quem sou eu?</h2>
-        <p>
-          Atualmente estou cursando Engenharia de Software na Universidade de
-          Brasília (UnB), sou Diretora de Projetos da Empresa Júnior Orc'estra
-          Gamificação (Empresa Júnior de Engenharia de Software da UnB) e
-          trabalho na empresa Meta - Digital. Simple. Human. como Coordenadora
-          de Projetos. Tenho inglês fluente, certificado pela Universidade de
-          Cambridge (Nível B1). Busco experiência na área e crescer
-          profissionalmente. Saiba mais sobre meus conhecimentos:
-        </p>
-        <a
-          href="https://www.linkedin.com/in/mariaabritta/"
-          target="_blank"
-          class="btn"
-          >Saiba mais em "Licenças e certificados" no LinkedIn!</a
-        >
-      </div>
-    </section>
-
-    <!--projects start-->
-    <section class="projects" id="projects">
-      <div class="heading">
-        <span>Meu Projetos</span>
-        <h2>Clique em "GitHub" para saber mais!</h2>
-      </div>
-      <div class="projects-container">
-        <div class="box">
-          <div class="box-image">
-            <img src="images/projeto1.png" />
-            <!--Imagem de projeto-->
-          </div>
-          <h2>Eng Venture</h2>
-          <h3>Desenvolvedora Full Stack</h3>
-          <h3>Python + GDScript</h3>
-          <a href="https://github.com/matheusrazor/DS-time9" target="_blank"
-            >GitHub</a
-          >
-          <i class="bx bx-paper-plane"></i>
-        </div>
-
-        <div class="box">
-          <div class="box-image">
-            <img src="images/projeto2.png" />
-            <!--Imagem de projeto-->
-          </div>
-          <h2>GetPet</h2>
-          <h3>Product Owner</h3>
-          <h3>Flutter + Firebase</h3>
-          <a
-            href="https://github.com/mdsreq-fga-unb/2022.2-GetPet"
-            target="_blank"
-            >GitHub</a
-          >
-          <i class="bx bxs-dog"></i>
-        </div>
-
-        <div class="box">
-          <div class="box-image">
-            <img src="images/projeto3.png" />
-            <!--Imagem de projeto-->
-          </div>
-          <h2>Inevxt</h2>
-          <h3>Desenvolvedora Back-end</h3>
-          <h3>React + NodeJS + MySQL</h3>
-          <a href="https://github.com/fga-eps-mds/GFour-Invext" target="_blank"
-            >GitHub</a
-          >
-          <i class="bx bx-wallet"></i>
-        </div>
-      </div>
-    </section>
-
-    <!--skills start-->
-    <section class="skills" id="skills">
-      <div class="heading">
-        <span>Minhas Skills</span>
-        <h2>Me conheça um pouco mais!</h2>
-      </div>
-
-      <div class="skills-container">
-        <div class="s-box">
-          <img src="images/softSkills.png" />
-          <h3>Soft Skills</h3>
-          <p>
-            Comunicar, liderar, colaborar, resolver conflitos e pensar
-            criticamente são habilidades que compõem uma verdadeira paleta de
-            soft skills que eu domino. Sempre levo essas caracterísitcas em todo
-            processo profissional que me insiro.
-          </p>
-        </div>
-
-        <div class="s-box">
-          <img src="images/hardSkills.png" />
-          <h3>Hard Skills</h3>
-          <p>
-            Elencar Requisitos, Programar, Visão de Negócio/Projeto, Língua
-            inglesa são habilidades que fazem parte de mim. Essas hard skills
-            são alicerces que solidificam minahs expertise técnica e contribuem
-            para minha capacidade de enfrentar desafios complexos com confiança.
-          </p>
-        </div>
-
-        <div class="s-box">
-          <img src="images/principaisSkills.png" />
-          <h3>Principais Skills</h3>
-          <p>
-            Proatividade, Alegria, Confiança, Adaptabilidade, Enxergar além do
-            momento presente, são skills que estão dentro de cada habilidade
-            minha!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--contact start-->
-    <section class="contact" id="contact">
-      <div class="footer">
-        <div class="main">
-          <div class="col">
-            <h4>Contate-me</h4>
-            <div class="social">
-              <a
-                href="https://www.linkedin.com/in/maria-abritta-ba7632174/"
-                target="_blank"
-                ><i class="bx bxl-linkedin-square"> LinkedIn</i></a
-              >
-              <a href="https://github.com/MariaAbritta"
-                ><i class="bx bxl-github" target="_blank"> GitHub</i></a
-              >
-              <a href="#"
-                ><i class="bx bxl-gmail">
-                  G-mail: Eduardaabritta@gmail.com</i
-                ></a
-              >
+<body>
+    
+    <!--========== SIDEBAR ==========-->
+    <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="index.html" class="nav_logo-text">M</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="nav_menu">
+                <div class="menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">About</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">Skills</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav_link">Work</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#services" class="nav_link">Services</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-    <!--JavaScript-->
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+            <div class="btn_share">
+                <i class="uil uil-share-alt social_share"></i>
+            </div>
+
+            <div class="nav_close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!--========== MAIN ==========-->
+    <main class="main">
+        <!--===== Home =====-->
+        <section class="home" id="home">
+            <div class="home_container container grid">
+                <div class="home_social">
+                    <span class="home_social-follow">Follow Me</span>
+                    <div class="home_social-links">
+                        <a href="https://www.linkedin.com/in/mariaabritta/" target="_blank" class="home_social-link">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="assets/img/home-img.png" alt="" class="home_img">
+
+                <div class="home_data">
+                    <h1 class="home_title">Hi, I'am Maria</h1>
+                    <h3 class="home_subtitle">Project Coordinator</h3>
+                    <p class="home_description">Adept at managing all project phases, from conception to completion, with an emphasis on precision and excellence.</p>
+                    <a href="#about" class="button"><i class='bx bx-user button_icon'></i>
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="my_info">
+                    <div class="info_item">
+                        <i class='bx bxl-whatsapp info_icon'></i>
+
+                        <div>
+                            <h3 class="info_title">WhatsApp</h3>
+                            <span class="info_subtitle">+55 (61) 99698-2157</span>
+                        </div>
+                    </div>
+
+                    <div class="info_item">
+                        <i class='bx bx-envelope info_icon'></i>
+
+                        <div>
+                            <h3 class="info_title">Email</h3>
+                            <span class="info_subtitle">eduardaabritta@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== About =====-->
+        <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <img src="assets/img/about-img-Maria.jpg" alt="" class="about_jpg">
+
+                <div class="about_data">
+                    <h3 class="about_heading">Hi, I'm Maria Abritta, Based in Brazil</h3>
+                    <p class="about_description">Project Coordinator with expertise in leading and delivering complex IT projects, including SAP S/4HANA implementations and other enterprise solutions. Ability to manage multidisciplinary teams, optimize processes, and ensure project delivery aligned with business needs.</p>
+                    <div class="about_info grid">
+                        <div class="about_box">
+                            <i class='bx bx-award about_icon'></i>
+                            <h3 class="about_title">Experience</h3>
+                            <span class="about_subtitle">2 + Years</span>
+                        </div>
+
+                        <div class="about_box">
+                            <i class='bx bx-briefcase-alt-2 about_icon'></i>
+                            <h3 class="about_title">Completed</h3>
+                            <span class="about_subtitle">10 + Projects</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button"><i class='bx bx-navigation button_icon'></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Qualification =====-->
+        <section class="qualification section">
+            <h2 data-heading="My Journey" class="section_title">Qualification</h2>
+
+            <div class="qualification_container container grid">
+
+                <div class="education">
+                    <h3 class="qualification_title">
+                        <i class='bx bxs-graduation'></i>Education
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Researcher in Medical Artificial Intelligence</h3>
+                            <p class="timeline_text">University of Brasilia - UnB</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2024 - Present
+                            </span>
+                        </div>
+
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Software Engineering</h3>
+                            <p class="timeline_text">University of Brasilia - UnB</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2019 - Until 2025
+                            </span>
+                        </div>
+
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Council of Europe Level B1</h3>
+                            <p class="timeline_text">University of Cambridge</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2015 - 2019
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h3 class="qualification_title">
+                        <i class='bx bx-briefcase-alt'></i>Experience
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">IT Project Coordinator</h3>
+                            <p class="timeline_text">Meta IT North America</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2023 - Present
+                            </span>
+                        </div>
+
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">SAP ABAP Developer + PO and Requirements Analyst</h3>
+                            <p class="timeline_text">Meta</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2022 - 2023
+                            </span>
+                        </div>
+
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Project Director</h3>
+                            <p class="timeline_text">Orc'estra Gamification</p>
+                            <span class="timeline_date"><i class='bx bx-calendar'></i>
+                                2022 - 2023
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--===== Skills =====-->
+        <section class="skills section" id="skills">
+            <h2 data-heading="My Abilities" class="section_title">My Experience</h2>
+
+            <div class="skills_container container grid">
+                <div class="skills_tabs">
+                    <div class="skills_header skills_active" data-target="#frontend">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">Artificial Intelligence</h1>
+                            <span class="skills_subtitle">More than 1 years</span>
+                        </div>
+                        <i class='bx bx-chevron-down skills_arrow'></i>
+                    </div>
+
+                    <div class="skills_header" data-target="#design">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">Project Management</h1>
+                            <span class="skills_subtitle">More than 3 years</span>
+                        </div>
+                        <i class='bx bx-chevron-down skills_arrow'></i>
+                    </div>
+
+                    <div class="skills_header" data-target="#backend">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+
+                        <div>
+                            <h1 class="skills_title">Software Development</h1>
+                            <span class="skills_subtitle">More than 2 years</span>
+                        </div>
+                        <i class='bx bx-chevron-down skills_arrow'></i>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <div class="skills_group skills_active" data-content id="frontend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Researcher in AI applied to medicine, focusing on in vitro fertilization. I develop advanced algorithms to improve process accuracy and use machine learning to optimize treatments and increase success rates.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_group" data-content id="design">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Team Leadership</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage " style='width: 85%;'></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Agile Methodologies</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage " style='width: 80%;'></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Risk Management</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage " style='width: 70%;'></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_group" data-content id="backend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Requirements Analysis</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage " style='width: 75%;'></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">65%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style='width: 65%;'></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">SAP ABAP</h3>
+                                    <span class="skills_number">40%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage " style='width: 40%;'></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== Work =====-->
+        <section class="work section" id="work">
+            <h2 data-heading="My Portifolio" class="section_title">Project and Experiences</h2>
+
+            <div class="work_filters">
+                <span class="work_item active-work" data-filter="all">All</span>
+                <span class="work_item" data-filter=".Management">Management</span>
+                <span class="work_item" data-filter=".TechLeadership">Tech Leadership</span>
+                <span class="work_item" data-filter=".AI">AI</span>
+            </div>
+
+            <div class="work_container container grid">
+                <div class="work_card mix Management">
+                    <img src="assets/img/work-1.webp" alt="" class="work_img">
+                    <h3 class="work_title">Web Design</h3>
+                    <span class="work_button">Demo
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">The services provide for design</h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+                            accusamus veritatis dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>4 dec 2020</span></li>
+                            <li>Technologies - <span>HTML CSS</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix TechLeadership">
+                    <img src="assets/img/work-2-Gloria.webp.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Gloria Gamification App</h3>
+                    <span class="work_button">Find Out More
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">Gender Equality Gamification for "Na Praia" Event</h3>
+                        <p class="details_description">eveloped a gamification app in collaboration with Instituto Gloria to promote gender equality awareness at the Na Praia event in Brasília. The app highlighted the achievements of remarkable women around the world, ensuring public engagement on gender respect and equality.</p>
+                        <ul class="details_info">
+                            <li>Created - <span>May 2023 - Jul 2023</span></li>
+                            <li>Technologies - <span>React + Node</span></li>
+                            <li>Role - <span>Project Lead and Software Development</span></li>
+                            <li>View - <span><a href="https://gloria-gamificacao.netlify.app/">App</a></span></li>
+                            <li>View - <span><a href="https://www.correiobraziliense.com.br/euestudante/ensino-superior/2023/07/5108621-robo-brasiliense-contra-a-violencia-de-genero-chega-a-190-paises.html">Article</a></span></li>
+                            <li>View - <span><a href="https://eusouagloria.com.br/home">Gloria Institute</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix AI">
+                    <img src="assets/img/work-3-FIV.webp.jpg" alt="" class="work_img">
+                    <h3 class="work_title">AI in IVF</h3>
+                    <span class="work_button">Find Out More
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">Artificial Intelligence for Assisted Reproduction</h3>
+                        <p class="details_description">Collaborating on the development and application of AI solutions in the field of medicine, focusing on in vitro fertilization to enhance efficiency and success rates through data analysis and algorithm development.</p>
+                        <ul class="details_info">
+                            <li>Created - <span>March 2024 - Until now</span></li>
+                            <li>Technologies - <span>AI, Machine Learning, Data Analysis</span></li>
+                            <li>Role - <span>Researcher at CEDIS UnB - Center for Studies, Development and Innovation in Software</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix TechLeadership">
+                    <img src="assets/img/work-4-EngVent.webp.jpg" alt="" class="work_img">
+                    <h3 class="work_title">ENG Venture - Educational RPG</h3>
+                    <span class="work_button">Find Out More
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">ENG Venture: RPG for Engineering Education</h3>
+                        <p class="details_description">An educational RPG game designed to introduce young students to the engineering fields at UnB Gama campus. The game features five unique arenas, each representing an engineering course: Software, Electronic, Energy, Automotive, and Aerospace Engineering, with mini-games and challenges in each.</p>
+                        <ul class="details_info">
+                            <li>Created - <span>2022</span></li>
+                            <li>Technologies - <span>Python, RPG Mechanics, Pixel-art</span></li>
+                            <li>Role - <span>Project Lead and Game Developer</span></li>
+                            <li>Play - <span><a href="https://www.mediafire.com/file/7i1uzhyzr68qt71/game-main.rar/file">Download the Compressed Archive (.RAR) and when finished, click on the "EngVenture" app!</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix Management">
+                    <img src="assets/img/work-5.webp" alt="" class="work_img">
+                    <h3 class="work_title">AAAAAAAA</h3>
+                    <span class="work_button">Find Out More
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">MEU DEUS ESSE CÓDIGO NÃO ACABA</h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+                            accusamus veritatis dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>4 dec 2020</span></li>
+                            <li>Technologies - <span>HTML CSS</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>View - <span><a href="#">www.domain.com</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix AI">
+                    <img src="assets/img/work-6-Ocean.webp.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Satellite Imaging Solutions</h3>
+                    <span class="work_button">Find Out More
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portifolio_item-details">
+                        <h3 class="details_title">Research and Development in Satellite Imaging and AI</h3>
+                        <p class="details_description">Conducted research on developing AI solutions for data analysis and monitoring, focusing on automated image interpretation from nanosatellites.</p>
+                        <ul class="details_info">
+                            <li>Created - <span>April 2024 - September 2024</span></li>
+                            <li>Technologies - <span>AI, Data Analysis, Satellite Imaging</span></li>
+                            <li>Role - <span>Researcher</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Popup -->
+        <div class="portifolio_popup">
+            <div class="portifolio_popup-inner">
+                <div class="portifolio_popup-content grid">
+                    <span class="portifolio_popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp_thumbnail">
+                        <img src="assets/img/work-2.webp" alt="" class="portifolio_popup-img">
+                    </div>
+                    <div class="portifolio_popup-info">
+                        <div class="portifolio_popup-subtitle">Featured - <span>Design</span></div>
+                        <div class="portifolio_popup-body">
+                            <h3 class="details_title">BAVBKASK A ÇLKSDL</h3>
+                            <p class="details_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Eveniet
+                                accusamus veritatis dolore!</p>
+                            <ul class="details_info">
+                                <li>Created - <span>4 dec 2020</span></li>
+                                <li>Technologies - <span>HTML CSS</span></li>
+                                <li>Role - <span>frontend</span></li>
+                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--===== Services =====-->
+        <section class="services section" id="services">
+            <h2 data-heading="Services" class="section_title">What I Offer</h2>
+
+            <div class="services_container container grid">
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-web-grid services_icon"></i>
+                        <h3 class="services_title">Web <br> Designer</h3>
+                    </div>
+
+                    <span class="services_button">
+                        View More <i class="uil uil-arrow-right services_button-icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <h3 class="services_modal-title">Web Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I develop the user interface.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">Web page development.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I create ux element interactions.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I position your company brand.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info"> Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-arrow services_icon"></i>
+                        <h3 class="services_title">Ui/Ux <br> Designer</h3>
+                    </div>
+
+                    <span class="services_button">
+                        View More <i class="uil uil-arrow-right services_button-icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <h3 class="services_modal-title">Branding Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I develop the user interface.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">Web page development.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I create ux element interactions.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I position your company brand.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info"> Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-edit services_icon"></i>
+                        <h3 class="services_title">Branding <br> Designer</h3>
+                    </div>
+
+                    <span class="services_button">
+                        View More <i class="uil uil-arrow-right services_button-icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <h3 class="services_modal-title">UI/UX Designer</h3>
+                            <p class="services_modal-description">Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.</p>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I develop the user interface.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">Web page development.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I create ux element interactions.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info">I position your company brand.</p>
+                                </li>
+
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p class="services_modal-info"> Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--===== Testimonials =====-->
+        <section class="testimonials section">
+            <h2 data-heading="My coworkers say" class="section_title">Testimonials</h2>
+
+            <div class="testimonials_container container swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Maria Abritta is an excellent leader and colleague. I can say with confidence that she is a highly respected professional, extremely reliable, and competent in everything she sets out to do. She strikes a great balance between achieving results and following metrics while also listening and understanding what can and should be done. Additionally, she excels in problem-solving, conflict resolution, and bringing solutions even in areas beyond her expertise.</p>
+                        <h3 class="testimonial_date">October 11th, 2024</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client6-Iago.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">Iago Matos</span>
+                                <span class="testimonial_profile-detail">Director of Operations of Orc'estra Gamification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Working with Maria is a privilege. Her strategic and systemic vision allows her to manage or work collaboratively with multiple teams. I have learned a great deal working with her, as she is always willing to help and learn from everyone. Her perspective on projects ensures that they flow organically, as everything is well-planned, even for potential unforeseen circumstances.</p>
+                        <h3 class="testimonial_date">October 11th, 2024</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client5-Mariana.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">Mariana Fonseca</span>
+                                <span class="testimonial_profile-detail">Member of Orc'estra Gamification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Maria is an exceptional professional, distinguished by her software expertise and strong team and project management skills. Her excellent soft skills motivate her team to achieve remarkable results. As a strong and inspiring leader, she communicates clearly and empathetically, fostering a collaborative work environment. Her growth mindset drives her to seek new challenges and learning opportunities. An attentive listener, Maria strives to understand her team's needs and concerns, earning her the respect and admiration of all.</p>
+                        <h3 class="testimonial_date">February 21st, 2024</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client4-Clara.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">Clara Closs</span>
+                                <span class="testimonial_profile-detail">Organizational President of Orc'estra Gamification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Maria Abritta is an exceptionally competent and dedicated individual, always striving to deliver high-quality results. She is assertive in her opinions but maintains an open mind to receiving feedback, constantly seeking opportunities for personal and professional growth. It is rewarding to work with Maria, and I believe she will be a valuable asset to any team she joins.</p>
+                        <h3 class="testimonial_date">March 16th, 2023</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client1-Jonga.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">João Gabriel Matos</span>
+                                <span class="testimonial_profile-detail">Director of Orc'estra Gamification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Maria is an excellent professional! With sharp logical thinking and outstanding communication skills, she is able to assist and contribute to the team in various ways.</p>
+                        <h3 class="testimonial_date">August 22nd, 2022</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client3-JoaoP.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">João Guilherme Paula</span>
+                                <span class="testimonial_profile-detail">SAP Consultant of Meta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial_card swiper-slide">
+                        <div class="testimonial_quote">
+                            <i class='bx bxs-quote-alt-left'></i>
+                        </div>
+                        <p class="testimonial_description">Maria is a wonderful person! She is proactive, dedicated, a great manager, and friendly, bringing a sense of ease even in stressful and high-pressure moments. The projects and tasks she carried out at Orc'estra Gamificação were very well developed and managed, bringing significant benefits and growth to the team members. It's an honor to work at the same company as you!</p>
+                        <h3 class="testimonial_date">April 24th, 2022</h3>
+                        <div class="testimonial_profile">
+                            <img src="assets/img/client2-Sabrina.jpg" alt="" class="testimonial_profile-img">
+
+                            <div class="testimonial_profile-data">
+                                <span class="testimonial_profile-name">Sabrina Berno</span>
+                                <span class="testimonial_profile-detail">Business Director of Orc'estra Gamification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--===== Contact =====-->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get in touch" class="section_title">Contact Me</h2>
+
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <div class="contact_info">
+                        <div class="contact_card">
+                            <i class='bx bx-envelope contact_card-icon'></i>
+                            <h3 class="contact_card-title">Email</h3>
+                            <span class="contact_card-data">eduardaabritta@gmail.com</span>
+                            <span class="contact_button">
+                                Write me <i class="uil uil-arrow-right contact_button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class='bx bxl-whatsapp contact_card-icon'></i>
+                            <h3 class="contact_card-title">WhatsApp</h3>
+                            <span class="contact_card-data">+55 (61) 99698-2157</span>
+                            <span class="contact_button">
+                                Write me <i class="uil uil-arrow-right contact_button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_content">
+                    <form action="https://formspree.io/f/mldryqgo" method="POST" class="contact_form">
+                        <div class="input_container">
+                            <input type="text" name="username" class="input" required>
+                            <label for="">Name</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="email" name="email" class="input" required>
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="tel" class="input" name="phone" required>
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input_container textarea">
+                            <textarea name="message" id="" class="input" required></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit" class="button"><i class='uil uil-navigator button_icon'></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Maria Abritta</h1>
+                        <span class="footer_subtitle">Gerente de projetos</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#services" class="footer_link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="footer_link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer_social">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer_copy">&#169; Crypticalcoder. All Right reserved</p>
+            </div>
+        </footer>
+    </main>
+
+    <!--========== SCROLL UP ==========-->
+
+
+    <!--========== MIXITUP FILTER ==========-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
