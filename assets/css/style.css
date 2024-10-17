@@ -708,12 +708,11 @@ input {
 
 .portifolio_popup-close {
     position: absolute;
-    top: 0.5rem; /* Distância do topo */
-    right: 0.5rem; /* Distância da direita */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    color: var(--skin-color); /* Cor do texto */
-    cursor: pointer; /* Cursor de ponteiro */
-    z-index: 10; /* Garante que o botão fique acima do conteúdo */
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--skin-color);
+    cursor: pointer;
 }
 
 .portifolio_popup-img {
@@ -1222,7 +1221,11 @@ textarea.input {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px)  {
+    .home {
+        background: url('../img/home-bg-Maria.jpg') no-repeat center center/cover;
+    }
+
     .container {
         margin-left: var(--mb-1-5);
         margin-right: var(--mb-1-5);
@@ -1351,7 +1354,11 @@ textarea.input {
 }
 
 /* For Medium Devices */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 1023px) {
+
+    .home {
+        background: none;
+    }
 
     .about_img {
         width: 250px;
@@ -1437,7 +1444,7 @@ textarea.input {
     }
 
     .home {
-        background: url('../img/home-bg-Maria.jpg');
+        background: none;
         height: initial;
         align-items: initial;
         padding: 7rem 0 2rem;
@@ -1509,8 +1516,9 @@ textarea.input {
 }
 
 /* For Small Devices */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
     .home {
+        background: none;
         height: auto;
         background: none;
         min-height: 300px;
